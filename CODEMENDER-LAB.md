@@ -14,3 +14,9 @@ The pipeline lives at
 ## Prerequisites
 - GitHub repository with Actions enabled and Workload Identity Federation (WIF) configured.
 - Python 3.10+ for running helper scripts under `.github/scripts/`.
+
+## Local Verification
+Verify the Python helper scripts compile cleanly before pushing workflow changes:
+```bash
+python3 -m py_compile .github/scripts/cm_triage.py .github/scripts/extract_cm_diff.py
+```
