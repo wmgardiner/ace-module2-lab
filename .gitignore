@@ -83,3 +83,7 @@ cm-security-report.json
 .codemender/
 *.cm.log
 .cm_project
+
+# Python bytecode
+__pycache__/
+*.py[cod]
