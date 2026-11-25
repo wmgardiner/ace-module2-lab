@@ -10,3 +10,7 @@ app is **OWASP Juice Shop** (intentionally vulnerable).
 
 The pipeline lives at
 [`.github/workflows/codemender-pipeline.yml`](./.github/workflows/codemender-pipeline.yml).
+
+## Prerequisites
+- GitHub repository with Actions enabled and Workload Identity Federation (WIF) configured.
+- Python 3.10+ for running helper scripts under `.github/scripts/`.
