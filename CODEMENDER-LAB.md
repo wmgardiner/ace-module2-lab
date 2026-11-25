@@ -20,3 +20,7 @@ Verify the Python helper scripts compile cleanly before pushing workflow changes
 ```bash
 python3 -m py_compile .github/scripts/cm_triage.py .github/scripts/extract_cm_diff.py
 ```
+
+## Troubleshooting
+- **WIF authentication errors:** Run `.github/workflows/wif-auth-test.yml` first to confirm OIDC token exchange.
+- **Pipeline blocked on HIGH/CRITICAL findings:** Inspect the CodeMender triage summary and review the generated fix PR.
