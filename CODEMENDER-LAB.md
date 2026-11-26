@@ -32,3 +32,8 @@ python3 -m py_compile .github/scripts/cm_triage.py .github/scripts/extract_cm_di
 | `.github/workflows/wif-auth-test.yml` | Standalone WIF authentication smoke test |
 | `.github/scripts/cm_triage.py` | Triage parser for CodeMender security findings |
 | `.github/scripts/extract_cm_diff.py` | Extracts patch diffs for automated remediation PRs |
+
+## Automated Fix PR Review Checklist
+- Confirm the CodeMender remediation diff addresses the reported CWE without breaking existing unit tests.
+- Verify no unintended files or secrets were introduced in the PR.
+- Re-run the CI guardrail workflow to confirm HIGH/CRITICAL findings are resolved.
